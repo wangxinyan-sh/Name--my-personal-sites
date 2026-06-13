@@ -1,118 +1,110 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
-
+    <title>王昕琂的个人网站</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <!-- 首页 -->
-    <header>
-        <h1>【王昕琂的网站】</h1>
+<nav class="navbar">
+    <div class="logo">王昕琂</div>
+    <div class="nav-links">
+        <a href="#about">关于我</a>
+        <a href="#study">学习经历</a>
+        <a href="#hobby">兴趣爱好</a>
+        <a href="#skills">能力标签</a>
+        <a href="#plan">未来规划</a>
+    </div>
+</nav>
 
-        <p>
-            【大一新生】
-        </p>
+<header class="hero">
+    <div class="hero-content">
+        <div class="avatar">WX</div>
+        <h1>王昕琂</h1>
+        <p class="subtitle">准大学生｜AI学习者｜篮球与围棋爱好者</p>
+        <p class="desc">保持好奇，持续成长，用知识和行动探索更大的世界。</p>
+        <a class="btn" href="#about">了解我</a>
+    </div>
+</header>
 
-        <p>
-            【热爱金融，芯片制造，围棋，体育】
-        </p>
-    </header>
+<section id="about" class="card">
+    <h2>关于我</h2>
+    <p>
+        大家好，我是王昕琂。我热爱学习，也喜欢探索新技术。
+        我关注金融、人工智能、编程和个人成长，希望在大学阶段不断提升自己的综合能力。
+    </p>
+</section>
 
-    <!-- 关于我-->
-    <section>
-        <h2>关于我</h2>
-
-        <p>
-            【一个十九岁的准大一学生，来自上海，希望能了解世界更多，去更多的地方结交更多的人，看更多的风景，吃更好吃的美食
-            】
-        </p>
-
-        <p>
-            【暂无】
-        </p>
-
-        <p>
-            【未定】
-        </p>
-    </section>
-
-    <!-- 技能 -->
-    <section>
-        <h2>专业技能</h2>
-
-        <ul>
-            <li>【围棋】</li>
-            <li>【篮球】</li>
-            <li>【足球】</li>
-            <li>【金融知识】</li>
-            <li>【博物学】</li>
-        </ul>
-    </section>
-
-    <!-- 项目经验 -->
-    <section>
-        <h2>项目经验</h2>
-
-        <div class="card">
-            <h3>【项目名称】</h3>
-
-            <p>
-                【项目介绍】
-            </p>
-
-            <p>
-                【你的职责】
-            </p>
+<section id="study" class="card">
+    <h2>学习经历</h2>
+    <div class="timeline">
+        <div>
+            <h3>高中阶段</h3>
+            <p>系统学习语文、数学、英语、物理、化学、地理等课程，逐步形成自己的学习方法。</p>
         </div>
-
-        <div class="card">
-            <h3>【项目名称】</h3>
-
-            <p>
-                【项目介绍】
-            </p>
-
-            <p>
-                【你的职责】
-            </p>
+        <div>
+            <h3>大学准备阶段</h3>
+            <p>开始关注金融、AI工具、英语能力和编程实践，为未来专业学习做准备。</p>
         </div>
+    </div>
+</section>
 
-    </section>
+<section id="hobby" class="card">
+    <h2>兴趣爱好</h2>
+    <div class="grid">
+        <div class="item">🏀 篮球</div>
+        <div class="item">♟️ 围棋</div>
+        <div class="item">📚 阅读</div>
+        <div class="item">🌍 旅行</div>
+        <div class="item">🤖 AI工具</div>
+        <div class="item">💻 编程学习</div>
+    </div>
+</section>
 
-    <!-- 荣誉证书 -->
-    <section>
-        <h2>荣誉与证书</h2>
+<section id="skills" class="card">
+    <h2>技能与能力</h2>
+    <div class="tags">
+        <span>学习规划</span>
+        <span>逻辑思维</span>
+        <span>英语提升</span>
+        <span>金融兴趣</span>
+        <span>AI工具使用</span>
+        <span>Python入门</span>
+        <span>团队协作</span>
+        <span>持续成长</span>
+    </div>
+</section>
 
-        <ul>
-            <li>【证书1】</li>
-            <li>【证书2】</li>
-            <li>【证书3】</li>
-        </ul>
-    </section>
+<section class="card">
+    <h2>项目作品</h2>
+    <div class="project">
+        <h3>个人网站 V2.0</h3>
+        <p>使用 HTML、CSS 和 JavaScript 搭建个人主页，并通过 GitHub Pages 免费发布上线。</p>
+    </div>
+</section>
 
-    <!-- 联系方式 -->
-    <section>
-        <h2>联系方式</h2>
+<section id="plan" class="card">
+    <h2>未来规划</h2>
+    <ul class="plan-list">
+        <li>提升英语阅读、写作和表达能力</li>
+        <li>学习金融基础知识，培养财经视野</li>
+        <li>继续学习 AI 工具和 Python 编程</li>
+        <li>积累个人作品，建设长期成长档案</li>
+    </ul>
+</section>
 
-        <p>邮箱：xxxxx@xxx.com</p>
+<section class="card contact">
+    <h2>联系方式</h2>
+    <p>邮箱：请填写你的邮箱</p>
+    <p>GitHub：请填写你的 GitHub 地址</p>
+</section>
 
-        <p>微信：wangxinyan2016</p>
+<footer>
+    <p>© 2026 王昕琂的个人网站</p>
+</footer>
 
-        <p>电话：19957339819</p>
-
-        <p>GitHub：wangxinyan-sh</p>
-
-        <p>LinkedIn：xxxxxx</p>
-    </section>
-
-    <script src="script.js"></script>
-
+<script src="script.js"></script>
 </body>
-
 </html>
