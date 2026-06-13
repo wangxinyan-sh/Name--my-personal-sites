@@ -403,7 +403,17 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .photo-grid img {
-        height: 260px;
+    .photo-grid img{
+        width:100%;
+    
+        height:320px;
+    
+        object-fit:cover;
+    
+        border-radius:20px;
+    
+        transition:0.4s;
+    }
+        object-fit:cover;
     }
 }
