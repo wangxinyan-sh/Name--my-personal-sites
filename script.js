@@ -1,8 +1,11 @@
-console.log("Wangxinyan Personal Website loaded.");
+// =====================
+// Wangxinyan Personal Website 3.0
+// =====================
 
+// 返回顶部按钮
 const topBtn = document.getElementById("topBtn");
 
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
     if (window.scrollY > 500) {
         topBtn.style.display = "block";
     } else {
@@ -10,35 +13,128 @@ window.addEventListener("scroll", function () {
     }
 });
 
-topBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
+if(topBtn){
+    topBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
     });
+}
+
+// 页面加载动画
+window.addEventListener("load", () => {
+    document.body.classList.add("loaded");
 });
 
-const sections = document.querySelectorAll(".section");
+// 导航平滑滚动
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
 
-sections.forEach(function (section) {
-    section.classList.add("reveal");
-});
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
 
-const observer = new IntersectionObserver(function (entries) {
-    entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("active");
+        if(target){
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
         }
     });
-}, {
-    threshold: 0.15
 });
 
-sections.forEach(function (section) {
-    observer.observe(section);
+// 留言板演示功能
+const messageBtn = document.getElementById("messageBtn");
+
+if(messageBtn){
+
+    messageBtn.addEventListener("click", () => {
+
+        const name =
+            document.querySelector(".message-box input")
+            ?.value || "";
+
+        const text =
+            document.querySelector(".message-box textarea")
+            ?.value || "";
+
+        if(name === "" || text === ""){
+
+            alert("请先填写姓名和留言内容");
+
+            return;
+        }
+
+        alert(
+            "感谢留言，未来版本将支持在线保存留言！"
+        );
+    });
+}
+
+// 项目卡片弹窗
+const modal = document.getElementById("projectModal");
+const modalTitle = document.getElementById("modalTitle");
+const modalContent = document.getElementById("modalContent");
+const closeModal = document.getElementById("closeModal");
+
+document.querySelectorAll(".project-card").forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const title =
+            card.querySelector("h3")?.innerText || "项目";
+
+        const content =
+            card.querySelector("p")?.innerText || "";
+
+        modalTitle.innerText = title;
+        modalContent.innerText = content;
+
+        modal.style.display = "flex";
+    });
+
 });
 
-const messageButton = document.querySelector(".message-box button");
+if(closeModal){
 
-messageButton.addEventListener("click", function () {
-    alert("这是静态留言板，后续可以升级为真实留言功能。");
+    closeModal.addEventListener("click", () => {
+        modal.style.display = "none";
+    });
+
+}
+
+window.addEventListener("click", e => {
+
+    if(e.target === modal){
+
+        modal.style.display = "none";
+
+    }
+
+});
+
+// 滚动出现动画
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.classList.add("show");
+
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+document.querySelectorAll(
+    ".section,.card,.project-card,.photo-card"
+).forEach(el => {
+
+    observer.observe(el);
+
 });
