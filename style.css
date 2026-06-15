@@ -78,7 +78,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(255,255,255,0.08), transparent 55%);
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.08), transparent 55%);
 }
 
 .hero-mask {
@@ -156,13 +156,13 @@ body {
 }
 
 .btn-outline {
-    border: 1px solid rgba(255,255,255,0.9);
+    border: 1px solid rgba(255, 255, 255, 0.9);
     color: #ffffff;
 }
 
 .btn:hover {
     transform: translateY(-4px);
-    box-shadow: 0 14px 32px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.22);
 }
 
 /* 主体 */
@@ -180,7 +180,7 @@ main {
     background: rgba(255, 255, 255, 0.92);
     border-radius: 30px;
     box-shadow: 0 18px 52px rgba(15, 76, 129, 0.14);
-    border: 1px solid rgba(255,255,255,0.65);
+    border: 1px solid rgba(255, 255, 255, 0.65);
 }
 
 .section-title {
@@ -293,7 +293,7 @@ main {
     position: relative;
     overflow: hidden;
     border-radius: 26px;
-    box-shadow: 0 14px 34px rgba(0,0,0,0.17);
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.17);
     background: #e2e8f0;
 }
 
@@ -318,14 +318,14 @@ main {
     bottom: 14px;
     color: white;
     font-weight: 800;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .photo-card::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(transparent 45%, rgba(0,0,0,0.45));
+    background: linear-gradient(transparent 45%, rgba(0, 0, 0, 0.45));
 }
 
 .photo-card:hover img {
@@ -451,7 +451,7 @@ main {
 .modal {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     display: none;
     align-items: center;
     justify-content: center;
@@ -468,7 +468,7 @@ main {
     padding: 34px;
     border-radius: 26px;
     background: white;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.28);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
     position: relative;
 }
 
@@ -503,7 +503,7 @@ main {
     cursor: pointer;
     display: none;
     z-index: 2000;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.25);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
 footer {
@@ -530,6 +530,7 @@ footer {
         opacity: 0;
         transform: translateY(32px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -593,100 +594,108 @@ footer {
     .photo-grid {
         grid-auto-rows: 280px;
     }
+
     /* ===========================
    子页面统一风格
 =========================== */
-body.sub-page {border: 10px solid red;
-    min-height: 100vh !important;
+    body.sub-page {
+        border: 10px solid red;
+        min-height: 100vh !important;
 
-    background-image:
-        linear-gradient(
-            rgba(5,20,40,0.65),
-            rgba(5,20,40,0.65)
-        ),
-        url("shanghai.jpg");
+        background-image:
+            linear-gradient(rgba(5, 20, 40, 0.65),
+                rgba(5, 20, 40, 0.65)),
+            url("shanghai.jpg");
 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-body.sub-page main {
-    background: transparent !important;
-    padding-top: 120px !important;
-}
-
-body.sub-page .section {
-    background: rgba(255,255,255,0.86) !important;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border-radius: 30px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-}
-/* 时间轴 */
-
-.timeline{
-
-    position:relative;
-    
-    margin-top:40px;
-    
-    padding-left:40px;
-    
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
-    
-    .timeline::before{
-    
-    content:"";
-    
-    position:absolute;
-    
-    left:14px;
-    
-    top:0;
-    
-    width:4px;
-    
-    height:100%;
-    
-    background:#0f4c81;
-    
+
+    body.sub-page main {
+        background: transparent !important;
+        padding-top: 120px !important;
     }
-    
-    .timeline-item{
-    
-    position:relative;
-    
-    margin-bottom:50px;
-    
+
+    body.sub-page .section {
+        background: rgba(255, 255, 255, 0.86) !important;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+        border-radius: 30px;
+        box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
     }
-    
-    .timeline-dot{
-    
-    width:24px;
-    
-    height:24px;
-    
-    background:#0f4c81;
-    
-    border-radius:50%;
-    
-    position:absolute;
-    
-    left:-37px;
-    
-    top:5px;
-    
+
+    /* 时间轴 */
+
+    .timeline {
+
+        position: relative;
+
+        margin-top: 40px;
+
+        padding-left: 40px;
+
     }
-    
-    .timeline-content{
-    
-    background:white;
-    
-    padding:25px;
-    
-    border-radius:20px;
-    
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+    .timeline::before {
+
+        content: "";
+
+        position: absolute;
+
+        left: 14px;
+
+        top: 0;
+
+        width: 4px;
+
+        height: 100%;
+
+        background: #0f4c81;
+
+    }
+
+    .timeline-item {
+
+        position: relative;
+
+        margin-bottom: 50px;
+
+    }
+
+    .timeline-dot {
+
+        width: 24px;
+
+        height: 24px;
+
+        background: #0f4c81;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        left: -37px;
+
+        top: 5px;
+
+    }
+
+    .timeline-content {
+
+        background: white;
+
+        padding: 25px;
+
+        border-radius: 20px;
+
+        box-shadow: 0 10px 30px rgba(0, 0, 0, .1);
+    }
+    .sub-page main {
+        min-height: 100vh;
+        background-image: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 }
