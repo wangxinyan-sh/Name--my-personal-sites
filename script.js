@@ -138,3 +138,29 @@ document.querySelectorAll(
     observer.observe(el);
 
 });
+const preview = document.getElementById("imagePreview");
+const previewImg = document.getElementById("previewImg");
+const closePreview = document.getElementById("closePreview");
+
+document.querySelectorAll(".gallery-card img").forEach(function(img) {
+    img.addEventListener("click", function() {
+        if (preview && previewImg) {
+            previewImg.src = this.src;
+            preview.style.display = "flex";
+        }
+    });
+});
+
+if (closePreview) {
+    closePreview.addEventListener("click", function() {
+        preview.style.display = "none";
+    });
+}
+
+if (preview) {
+    preview.addEventListener("click", function(e) {
+        if (e.target === preview) {
+            preview.style.display = "none";
+        }
+    });
+}
