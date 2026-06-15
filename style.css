@@ -596,7 +596,7 @@ footer {
     /* ===========================
    子页面统一风格
 =========================== */
-body.sub-page {
+body.sub-page {border: 10px solid red;
     min-height: 100vh !important;
 
     background-image:
