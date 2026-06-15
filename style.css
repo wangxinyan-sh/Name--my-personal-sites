@@ -595,60 +595,23 @@ footer {
     /* ===========================
    子页面统一风格
 =========================== */
-
-}        
-.sub-page{
-    background:
-    linear-gradient(
-    rgba(5,20,40,0.65),
-    rgba(5,20,40,0.65)
-    ),
-    url("shanghai.jpg");
-
-    background-size:cover;
-    background-position:center;
-    background-attachment:fixed;
-
-    min-height:100vh;
-}
-
-.sub-page {
-    min-height: 100vh;
-    background: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.sub-page .section {
-    background: rgba(255,255,255,0.9);
-    backdrop-filter: blur(20px);
-    border-radius: 30px;
-    margin-top: 120px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
-}
-
-.sub-page h1,
-.sub-page h2 {
-    color: #0f4c81;
-}
-
-.sub-page ul li {
-    margin: 12px 0;
-    font-size: 20px;
-}
 body.sub-page {
     min-height: 100vh !important;
-    background: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg") center center / cover no-repeat fixed !important;
+    background-image: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-attachment: fixed !important;
 }
 
 body.sub-page main {
     background: transparent !important;
-    padding-top: 110px;
+    padding-top: 120px !important;
 }
 
 body.sub-page .section {
     background: rgba(255,255,255,0.86) !important;
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border-radius: 30px !important;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25) !important;
 }
