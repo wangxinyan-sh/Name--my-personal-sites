@@ -637,3 +637,18 @@ footer {
     margin: 12px 0;
     font-size: 20px;
 }
+body.sub-page {
+    min-height: 100vh !important;
+    background: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg") center center / cover no-repeat fixed !important;
+}
+
+body.sub-page main {
+    background: transparent !important;
+    padding-top: 110px;
+}
+
+body.sub-page .section {
+    background: rgba(255,255,255,0.86) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
