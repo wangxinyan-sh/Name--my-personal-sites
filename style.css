@@ -596,6 +596,7 @@ footer {
    子页面统一风格
 =========================== */
 
+}        
 .sub-page{
     background:
     linear-gradient(
@@ -635,5 +636,4 @@ footer {
 .sub-page ul li {
     margin: 12px 0;
     font-size: 20px;
-}
 }
