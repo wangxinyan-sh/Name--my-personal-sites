@@ -598,10 +598,17 @@ footer {
 =========================== */
 body.sub-page {
     min-height: 100vh !important;
-    background-image: linear-gradient(rgba(5,20,40,0.65), rgba(5,20,40,0.65)), url("shanghai.jpg") !important;
-    background-size: cover !important;
-    background-position: center !important;
-    background-attachment: fixed !important;
+
+    background-image:
+        linear-gradient(
+            rgba(5,20,40,0.65),
+            rgba(5,20,40,0.65)
+        ),
+        url("shanghai.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 body.sub-page main {
@@ -611,10 +618,10 @@ body.sub-page main {
 
 body.sub-page .section {
     background: rgba(255,255,255,0.86) !important;
-    backdrop-filter: blur(18px) !important;
-    -webkit-backdrop-filter: blur(18px) !important;
-    border-radius: 30px !important;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.25) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 30px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
 }
 }
 /* 时间轴 */
