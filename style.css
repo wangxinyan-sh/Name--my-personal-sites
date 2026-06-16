@@ -1401,6 +1401,72 @@ footer {
 .message-card strong{
     color:#0f4c81;
 }
+.message-header {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+.message-header .avatar {
+
+    font-size: 30px;
+}
+
+.message-time {
+
+    font-size: 12px;
+
+    color: #64748b;
+
+    margin-top: 2px;
+}
+
+.message-card {
+
+    margin-top: 18px;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.08);
+}
+
+.message-card p {
+
+    margin-top: 12px;
+
+    line-height: 1.8;
+}
+.clear-btn {
+
+    margin-top: 20px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #dc2626;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+
+    opacity: 0.9;
+}
 
 
 
