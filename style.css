@@ -1467,6 +1467,53 @@ footer {
 
     opacity: 0.9;
 }
+.note-page{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.note-page h1{
+
+    font-size:42px;
+
+    margin-bottom:15px;
+
+}
+
+.note-page h2{
+
+    margin-top:40px;
+
+    color:#0f4c81;
+
+}
+
+.note-page p{
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+.note-page ul{
+
+    margin-left:30px;
+
+    line-height:2;
+
+}
+
+.note-meta{
+
+    color:#64748b;
+
+    margin-bottom:30px;
+
+}
 
 
 
