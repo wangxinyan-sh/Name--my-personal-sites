@@ -1097,6 +1097,216 @@ footer {
     background: rgba(255,255,255,0.16);
     backdrop-filter: blur(12px);
 }
+/* ==================================
+   Mobile Responsive 5.0
+================================== */
+
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 14px 18px;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .nav-brand {
+        font-size: 22px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-links a {
+        margin-left: 0;
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 120px 18px 70px;
+    }
+
+    .avatar {
+        width: 108px;
+        height: 108px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+        line-height: 1.1;
+    }
+
+    .subtitle {
+        font-size: 22px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 210px;
+        text-align: center;
+    }
+
+    .visitor-box {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    main {
+        padding-top: 30px;
+    }
+
+    .section {
+        width: 92%;
+        padding: 28px 20px;
+        margin: 32px auto;
+        border-radius: 22px;
+    }
+
+    .section-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+
+    .intro-layout,
+    .study-grid,
+    .project-grid,
+    .contact-grid,
+    .interest-grid,
+    .card-grid {
+        grid-template-columns: 1fr !important;
+    }
+
+    .intro-text,
+    .profile-card,
+    .note-card,
+    .study-card,
+    .project-card,
+    .contact-card,
+    .interest-card,
+    .info-card {
+        padding: 22px;
+    }
+
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline::before {
+        left: 8px;
+    }
+
+    .timeline-dot {
+        left: -32px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .timeline-content h3 {
+        font-size: 20px;
+    }
+
+    .personal-gallery,
+    .gallery-grid,
+    .gallery-page-grid,
+    .photo-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+    }
+
+    .personal-photo,
+    .gallery-card,
+    .photo-card {
+        height: 260px !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+    }
+
+    .gallery-info h3 {
+        font-size: 22px;
+    }
+
+    .message-box input,
+    .message-box textarea {
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 28px 16px;
+        font-size: 14px;
+    }
+
+    #topBtn {
+        width: 42px;
+        height: 42px;
+        right: 16px;
+        bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 19px;
+    }
+
+    .hero-desc {
+        font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .navbar {
+        padding: 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .personal-photo,
+    .gallery-card,
+    .photo-card {
+        height: 220px !important;
+    }
+}
 
 
 
