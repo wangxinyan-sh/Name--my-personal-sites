@@ -1063,6 +1063,23 @@ footer {
     margin-bottom:15px;
 
 }
+.visitor-box{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
 
 
 
