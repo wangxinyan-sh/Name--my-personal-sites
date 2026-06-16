@@ -1080,6 +1080,23 @@ footer {
     font-weight:600;
 
 }
+.visitor-box {
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.visitor-box span {
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.16);
+    backdrop-filter: blur(12px);
+}
 
 
 
