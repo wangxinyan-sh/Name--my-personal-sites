@@ -1025,6 +1025,44 @@ footer {
     object-fit: cover;
     display: block;
 }
+.study-grid,
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-top:30px;
+}
+
+.study-card,
+.project-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.study-card:hover,
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.15);
+
+}
+
+.study-card h3,
+.project-card h3{
+
+    color:#0f4c81;
+
+    margin-bottom:15px;
+
+}
 
 
 
