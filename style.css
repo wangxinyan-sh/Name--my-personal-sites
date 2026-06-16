@@ -1356,6 +1356,51 @@ footer {
     color: #64748b;
     margin-bottom: 20px;
 }
+.guestbook-form{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.guestbook-form input{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+}
+
+.guestbook-form textarea{
+    min-height:140px;
+    resize:none;
+    border:none;
+    border-radius:12px;
+    padding:15px;
+    font-size:16px;
+}
+
+.guestbook-form button{
+    width:180px;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#0f4c81;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.message-card{
+    margin-top:20px;
+    padding:20px;
+    border-radius:15px;
+    background:white;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.message-card strong{
+    color:#0f4c81;
+}
 
 
 
