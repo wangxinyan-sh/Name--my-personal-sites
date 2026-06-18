@@ -1,3 +1,4 @@
+const ADMIN_PASSWORD = "xinyan2026";
 const form = document.querySelector(".guestbook-form");
 const list = document.getElementById("message-list");
 
@@ -36,9 +37,19 @@ function loadMessages() {
 
             <p>${msg.text}</p>
 
-            <button class="reply-toggle" data-index="${index}">
-                回复
+            <div class="message-actions">
+
+            <button class="reply-toggle"
+            data-index="${index}">
+            回复
             </button>
+            
+            <button class="delete-message"
+            data-index="${index}">
+            删除
+            </button>
+            
+            </div>
 
             <div class="reply-form" id="reply-form-${index}">
                 <input type="text" placeholder="你的名字">
@@ -101,7 +112,12 @@ form.addEventListener("submit", function (e) {
 });
 
 list.addEventListener("click", function (e) {
-    if (e.target.classList.contains("reply-toggle")) {
+    if (e.target.classList.contains("reply-toggle")) const pwd = prompt("请输入管理员密码");
+
+    if (pwd !== ADMIN_PASSWORD) {
+        alert("密码错误");
+        return;
+    }{
         const index = e.target.dataset.index;
         const replyForm = document.getElementById("reply-form-" + index);
 
@@ -127,15 +143,18 @@ list.addEventListener("click", function (e) {
         }
 
         messages[index].replies.push({
-            name: name,
-            text: text,
-            time: getTime()
+            name:"👑 王昕琂（站长）",
+            text:text,
+            time:getTime()
         });
+        
 
         saveMessages(messages);
         loadMessages();
-    }
-});
+    
+    } 
+});   
+
 
 const clearBtn = document.getElementById("clearMessages");
 
@@ -146,4 +165,28 @@ if (clearBtn) {
             loadMessages();
         }
     });
+}
+if (
+    e.target.classList.contains("delete-message")
+) {
+
+    const pwd =
+    prompt("管理员密码");
+
+    if (pwd !== ADMIN_PASSWORD) {
+        alert("密码错误");
+        return;
+    }
+
+    const index =
+    e.target.dataset.index;
+
+    const messages =
+    getMessages();
+
+    messages.splice(index,1);
+
+    saveMessages(messages);
+
+    loadMessages();
 }
