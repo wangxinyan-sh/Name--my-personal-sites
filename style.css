@@ -1623,6 +1623,82 @@ footer {
         background: #fef3c7;
         color: #92400e;
     }
+    .reply-toggle {
+        margin-top: 12px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 999px;
+        background: #eef6ff;
+        color: #0f4c81;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .reply-form {
+        display: none;
+        margin-top: 16px;
+        padding: 16px;
+        border-radius: 16px;
+        background: #f8fbff;
+    }
+    
+    .reply-form.active {
+        display: block;
+    }
+    
+    .reply-form input,
+    .reply-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 12px;
+        border: 1px solid #dbeafe;
+        border-radius: 12px;
+        font-size: 15px;
+        font-family: inherit;
+    }
+    
+    .reply-form textarea {
+        min-height: 90px;
+        resize: vertical;
+    }
+    
+    .reply-submit {
+        padding: 9px 18px;
+        border: none;
+        border-radius: 999px;
+        background: #0f4c81;
+        color: white;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .reply-list {
+        margin-top: 16px;
+        padding-left: 20px;
+        border-left: 3px solid #dbeafe;
+    }
+    
+    .reply-card {
+        margin-top: 12px;
+        padding: 14px;
+        border-radius: 14px;
+        background: #f1f5f9;
+    }
+    
+    .reply-card strong {
+        color: #0f4c81;
+    }
+    
+    .reply-card span {
+        display: block;
+        margin-top: 3px;
+        font-size: 12px;
+        color: #64748b;
+    }
+    
+    .reply-card p {
+        margin-top: 8px;
+    }
 
 
 
