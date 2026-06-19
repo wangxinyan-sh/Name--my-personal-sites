@@ -112,18 +112,20 @@ form.addEventListener("submit", function (e) {
 });
 
 list.addEventListener("click", function (e) {
-    if (e.target.classList.contains("reply-toggle")) const pwd = prompt("请输入管理员密码");
+    if (e.target.classList.contains("reply-toggle")) {
 
-    if (pwd !== ADMIN_PASSWORD) {
-        alert("密码错误");
-        return;
-    }{
+        const pwd = prompt("请输入管理员密码");
+    
+        if (pwd !== ADMIN_PASSWORD) {
+            alert("密码错误");
+            return;
+        }
+    
         const index = e.target.dataset.index;
         const replyForm = document.getElementById("reply-form-" + index);
-
+    
         replyForm.classList.toggle("active");
     }
-
     if (e.target.classList.contains("reply-submit")) {
         const index = e.target.dataset.index;
         const replyForm = document.getElementById("reply-form-" + index);
