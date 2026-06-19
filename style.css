@@ -1699,6 +1699,43 @@ footer {
     .reply-card p {
         margin-top: 8px;
     }
+    /* 首页统计卡片 */
+
+.site-stats{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.stat-card{
+    min-width:140px;
+    padding:18px 24px;
+
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.stat-card h3{
+    font-size:32px;
+    margin:0;
+    font-weight:700;
+}
+
+.stat-card p{
+    margin-top:8px;
+    font-size:14px;
+    opacity:0.9;
+}
 
 
 
