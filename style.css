@@ -1730,6 +1730,55 @@ footer {
     margin:0;
     font-weight:700;
 }
+.menu-toggle {
+    display: none;
+    border: none;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    font-size: 26px;
+    border-radius: 10px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 18px;
+        top: 16px;
+        z-index: 1001;
+    }
+
+    .nav-brand {
+        align-self: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        margin-top: 12px;
+        gap: 12px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
+
 
 .stat-card p{
     margin-top:8px;
