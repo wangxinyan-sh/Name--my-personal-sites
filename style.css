@@ -1778,6 +1778,45 @@ footer {
         text-align: center;
     }
 }
+.theme-toggle {
+    border: none;
+    background: rgba(255,255,255,0.18);
+    color: white;
+    font-size: 20px;
+    border-radius: 999px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+body.dark-mode {
+    background: #020617;
+    color: #e5e7eb;
+}
+
+body.dark-mode .section,
+body.dark-mode .project-card,
+body.dark-mode .study-card,
+body.dark-mode .note-item,
+body.dark-mode .knowledge-card,
+body.dark-mode .message-card {
+    background: rgba(15,23,42,0.92);
+    color: #e5e7eb;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #93c5fd;
+}
+
+body.dark-mode .navbar {
+    background: rgba(2,6,23,0.85);
+}
+
+body.dark-mode p,
+body.dark-mode li {
+    color: #dbeafe;
+}
 
 
 .stat-card p{
